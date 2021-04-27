@@ -1,0 +1,197 @@
+//
+//  PrefixHeader.pch
+//  FMRecordAudio
+//
+//  Created by 范明 on 2019/8/2.
+//  Copyright © 2019 范明. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "NSString+FMComoutedText.h"
+#import "WarningTool.h"
+
+
+#define DDLog(FORMAT, ...)   fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//RGB转UIColor（不带alpha值）
+#define UIColorFromRGB(rgbValue) [UIColor  colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0  green:((float)((rgbValue & 0xFF00) >> 8))/255.0  blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/* ************************************************************************************************* */
+//AppDelegate
+#define commonAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+//适配比例
+#define kAutoSizeScaleX SCREEN_WIDTH / 375
+#define kAutoSizeScaleY SCREEN_HEIGHT / 667
+#define adaptX(num) num * kAutoSizeScaleX
+//#define adaptY(num) num * kAutoSizeScaleY//
+#define adaptY(num) num * kAutoSizeScaleX
+//屏幕宽高
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define KScreenWidth    (MIN([[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height))
+#define KScreenHeight   (MAX([UIScreen mainScreen].bounds.size.width, [[UIScreen mainScreen] bounds].size.height))
+//视图高度
+#define kHegiht  SCREEN_HEIGHT - StatusBarHeight - 49
+#define SafeAreaTopHeight (SCREEN_HEIGHT == 812.0 ? 88 : 64)
+//判断是否为 iPhoneXS Max，iPhoneXS，iPhoneXR，iPhoneX
+#define PIsiPhoneX ((int)((SCREEN_HEIGHT/SCREEN_WIDTH)*100) == 216)?YES:NO
+
+//弱引用
+#define WeakSelf(type)  __weak typeof(type) weak##type = type;
+
+//判断是否是iPhone4s
+#define IS_IPHONE4S (([[UIScreen mainScreen] bounds].size.height-480)?NO:YES)
+//判断是否是iPhone5
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+//判断是否是iPhone6、iPhone7
+#define IS_IPHONE6 (([[UIScreen mainScreen] bounds].size.height-667)?NO:YES)
+//判断是否是iPhone6plush、7plus
+#define IS_IPHONE6_PLUS (([[UIScreen mainScreen] bounds].size.height-736)?NO:YES)
+//Appdelegate
+#define APPDELEGATE (AppDelegate *)[[UIApplication sharedApplication] delegate]
+//当前设备的ios版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+// 第一个参数是当下的控制器适配iOS11 一下的，第二个参数表示scrollview或子类
+#define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
+//视频iphoneX
+#define StatusBarHeight  [[UIApplication sharedApplication]statusBarFrame].size.height
+
+
+/* ************************************************************************************************* */
+
+//图片加载
+#define BXImg(NAME, EXT)        [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
+#define BX_IMAGE(imgName) [UIImage imageNamed:imgName]
+
+
+/* ************************************************************************************************* */
+
+//颜色
+#define RGB_COLOR(_STR_) ([UIColor colorWithRed:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(1, 2)] UTF8String], 0, 16)] intValue] / 255.0 green:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(3, 2)] UTF8String], 0, 16)] intValue] / 255.0 blue:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(5, 2)] UTF8String], 0, 16)] intValue] / 255.0 alpha:1.0])
+
+#define RGBR_COLOR(r, g, b, a)   [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define RGB(r,g,b) RGBR_COLOR(r,g,b,1.0f)
+
+#define customColor(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//随机颜色
+#define KRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+
+/** 16进制颜色值转换成UIColor */
+//RGB转UIColor（不带alpha值）
+#define UIColorFromRGB(rgbValue) [UIColor  colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0  green:((float)((rgbValue & 0xFF00) >> 8))/255.0  blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//RGB转UIColor（带alpha值）
+#define UIColorFromRGBWithAlpha(rgbValue,a) [UIColor  colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0  green:((float)((rgbValue & 0xFF00) >> 8))/255.0  blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+
+/* ************************************************************************************************* */
+
+//字体大小
+#define FH(x)  [UIFont systemFontOfSize:(x)]
+#define FHB(x) [UIFont boldSystemFontOfSize:(x)]
+
+/* ************************************************************************************************* */
+
+// View 圆角和加边框
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+// View 圆角
+#define ViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+/* ************************************************************************************************* */
+#define ITTDEBUG
+
+//log 输出
+#ifdef ITTDEBUG
+#define ITTDPRINT(xx, ...)      NSLog(@"< %s:(%d) > : " xx , __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define ITTDPRINT(xx, ...)      ((void)0)
+#endif
+
+// 断点Assert
+#define ITTAssert(condition, ...)\
+\
+do {\
+if (!(condition))\
+{\
+[[NSAssertionHandler currentHandler]\
+handleFailureInFunction:[NSString stringWithFormat:@"< %s >", __PRETTY_FUNCTION__]\
+file:[[NSString stringWithUTF8String:__FILE__] lastPathComponent]\
+lineNumber:__LINE__\
+description:__VA_ARGS__];\
+}\
+} while(0)
+/* ************************************************************************************************* */
+// PNG JPG 图片路径
+#define PNGPATH(NAME)           [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:NAME] ofType:@"png"]
+#define JPGPATH(NAME)           [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:NAME] ofType:@"jpg"]
+#define PATH(NAME, EXT)         [[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]
+
+// 加载图片
+#define PNGkImg(NAME)          [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:@"png"]]
+#define JPGkImg(NAME)          [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:@"jpg"]]
+#define kImg(NAME, EXT)        [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
+
+#define V_IMAGE(imgName) [UIImage imageNamed:imgName]
+
+/* ************************************************************************************************* */
+
+/** 获取AppDelegate */
+#define HPApp  ((AppDelegate *)[UIApplication sharedApplication].delegate)
+/** 通过名称获取UIImage */
+#define HPImgName(name) [UIImage imageNamed:name]
+/** 国际化字符串 */
+#define HPLocal(obj) NSLocalizedString(obj, @"")
+
+/** 设置UITableViewCell的Identifier标识 */
+#define HPIdentifiers(className) NSStringFromClass([className class])
+/** 初始化字符串 */
+#define HPString(s,...) [NSString stringWithFormat:@"%@",([NSString stringWithFormat:(s), ##__VA_ARGS__])]
+/** 获取NSUserDefault */
+#define HPDefaults [NSUserDefaults standardUserDefaults]
+/** 验证字符串的合法性 */
+#define HPVerifyStrLegal(obj) ((obj) && ![(obj) isKindOfClass:[NSNull class]] && ![obj isEqualToString:@"(null)"] && ![obj isEqualToString:@"<null>"]  && [obj length] != 0)?1:0
+/** 验证数组(可变数组)的合法性 */
+#define HPVerifyArrLegal(obj)  ((obj) && ([(obj) isKindOfClass:[NSArray class]] || [(obj) isKindOfClass:[NSMutableArray class]]) && 0 != [(obj) count])? 1:0
+
+/** 默认底图显示 */
+#define HPDefaultPlaceholderImage [UIImage imageNamed:@"defaulrPlaceholderImageBg"];
+
+//通知中心
+#define KNotificationCenter [NSNotificationCenter defaultCenter]
+
+#define _ZWYweakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self
+
+
+#ifdef DEBUG
+#define Dlog(s, ... ) NSLog( @"[%@ in line %d] =>%@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+//#define Dlog(s, ... )
+#define DDLog(FORMAT, ...)   fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+#else
+#define Dlog(s, ... )
+#define DDLog(FORMAT, ...)   fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#endif
+
+/* ************************************************************************************************* */
+
+
+
+#endif /* PrefixHeader_pch */

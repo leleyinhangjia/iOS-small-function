@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CA42C585AEE818150697609 /* libPods-省市区联动.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A91DF1B5E5B2638E49C218F /* libPods-省市区联动.a */; };
+		A6CCAF3821E1E92F00A1502C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF3721E1E92F00A1502C /* AppDelegate.m */; };
+		A6CCAF3B21E1E92F00A1502C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF3A21E1E92F00A1502C /* ViewController.m */; };
+		A6CCAF3E21E1E92F00A1502C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CCAF3C21E1E92F00A1502C /* Main.storyboard */; };
+		A6CCAF4021E1E93A00A1502C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CCAF3F21E1E93A00A1502C /* Assets.xcassets */; };
+		A6CCAF4321E1E93A00A1502C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CCAF4121E1E93A00A1502C /* LaunchScreen.storyboard */; };
+		A6CCAF4621E1E93A00A1502C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF4521E1E93A00A1502C /* main.m */; };
+		A6CCAF5621E1E9FC00A1502C /* OVLocationBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF5421E1E9FC00A1502C /* OVLocationBaseClass.m */; };
+		A6CCAF5721E1E9FC00A1502C /* OVLocationCity.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF5521E1E9FC00A1502C /* OVLocationCity.m */; };
+		A6CCAF5921E1EAA800A1502C /* LocationJson.json in Resources */ = {isa = PBXBuildFile; fileRef = A6CCAF5821E1EAA800A1502C /* LocationJson.json */; };
+		A6CCAF5F21E1EB5300A1502C /* OVLocationPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF5E21E1EB5300A1502C /* OVLocationPickerView.m */; };
+		A6CCAF6621E1F29D00A1502C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF6521E1F29D00A1502C /* SecondViewController.m */; };
+		A6CCAF6A21E1F47200A1502C /* ToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF6921E1F47200A1502C /* ToolBar.m */; };
+		A6CCAF6D21E1F4E400A1502C /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF6B21E1F4E400A1502C /* UIBarButtonItem+Item.m */; };
+		A6CCAF7121E1FB9400A1502C /* OVLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CCAF7021E1FB9400A1502C /* OVLocationModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86949DA9E54891A890E2FA62 /* Pods-省市区联动.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-省市区联动.release.xcconfig"; path = "Pods/Target Support Files/Pods-省市区联动/Pods-省市区联动.release.xcconfig"; sourceTree = "<group>"; };
+		9A91DF1B5E5B2638E49C218F /* libPods-省市区联动.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-省市区联动.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CCAF3321E1E92F00A1502C /* 省市区联动.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "省市区联动.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6CCAF3621E1E92F00A1502C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6CCAF3721E1E92F00A1502C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6CCAF3921E1E92F00A1502C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6CCAF3A21E1E92F00A1502C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6CCAF3D21E1E92F00A1502C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6CCAF3F21E1E93A00A1502C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6CCAF4221E1E93A00A1502C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6CCAF4421E1E93A00A1502C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6CCAF4521E1E93A00A1502C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6CCAF5121E1E9FC00A1502C /* OVLocationBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OVLocationBaseClass.h; sourceTree = "<group>"; };
+		A6CCAF5321E1E9FC00A1502C /* OVLocationCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OVLocationCity.h; sourceTree = "<group>"; };
+		A6CCAF5421E1E9FC00A1502C /* OVLocationBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OVLocationBaseClass.m; sourceTree = "<group>"; };
+		A6CCAF5521E1E9FC00A1502C /* OVLocationCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OVLocationCity.m; sourceTree = "<group>"; };
+		A6CCAF5821E1EAA800A1502C /* LocationJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocationJson.json; sourceTree = "<group>"; };
+		A6CCAF5A21E1EAC300A1502C /* OVLocationConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OVLocationConfig.h; sourceTree = "<group>"; };
+		A6CCAF5D21E1EB5300A1502C /* OVLocationPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OVLocationPickerView.h; sourceTree = "<group>"; };
+		A6CCAF5E21E1EB5300A1502C /* OVLocationPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OVLocationPickerView.m; sourceTree = "<group>"; };
+		A6CCAF6121E1EE0F00A1502C /* OVConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OVConfig.h; sourceTree = "<group>"; };
+		A6CCAF6421E1F29D00A1502C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		A6CCAF6521E1F29D00A1502C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		A6CCAF6821E1F47200A1502C /* ToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBar.h; sourceTree = "<group>"; };
+		A6CCAF6921E1F47200A1502C /* ToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBar.m; sourceTree = "<group>"; };
+		A6CCAF6B21E1F4E400A1502C /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		A6CCAF6C21E1F4E400A1502C /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		A6CCAF6F21E1FB9400A1502C /* OVLocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OVLocationModel.h; sourceTree = "<group>"; };
+		A6CCAF7021E1FB9400A1502C /* OVLocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OVLocationModel.m; sourceTree = "<group>"; };
+		D657B4E8A43724496396492A /* Pods-省市区联动.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-省市区联动.debug.xcconfig"; path = "Pods/Target Support Files/Pods-省市区联动/Pods-省市区联动.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6CCAF3021E1E92F00A1502C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CA42C585AEE818150697609 /* libPods-省市区联动.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D010CFEC93D0E4DC40B098 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A91DF1B5E5B2638E49C218F /* libPods-省市区联动.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60043DD81314C8733B000F09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D657B4E8A43724496396492A /* Pods-省市区联动.debug.xcconfig */,
+				86949DA9E54891A890E2FA62 /* Pods-省市区联动.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6CCAF2A21E1E92F00A1502C = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF3521E1E92F00A1502C /* 省市区联动 */,
+				A6CCAF3421E1E92F00A1502C /* Products */,
+				60043DD81314C8733B000F09 /* Pods */,
+				07D010CFEC93D0E4DC40B098 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A6CCAF3421E1E92F00A1502C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF3321E1E92F00A1502C /* 省市区联动.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6CCAF3521E1E92F00A1502C /* 省市区联动 */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF3621E1E92F00A1502C /* AppDelegate.h */,
+				A6CCAF3721E1E92F00A1502C /* AppDelegate.m */,
+				A6CCAF3921E1E92F00A1502C /* ViewController.h */,
+				A6CCAF3A21E1E92F00A1502C /* ViewController.m */,
+				A6CCAF6421E1F29D00A1502C /* SecondViewController.h */,
+				A6CCAF6521E1F29D00A1502C /* SecondViewController.m */,
+				A6CCAF4C21E1E94800A1502C /* LocationModule */,
+				A6CCAF3C21E1E92F00A1502C /* Main.storyboard */,
+				A6CCAF3F21E1E93A00A1502C /* Assets.xcassets */,
+				A6CCAF4121E1E93A00A1502C /* LaunchScreen.storyboard */,
+				A6CCAF4421E1E93A00A1502C /* Info.plist */,
+				A6CCAF4521E1E93A00A1502C /* main.m */,
+			);
+			path = "省市区联动";
+			sourceTree = "<group>";
+		};
+		A6CCAF4C21E1E94800A1502C /* LocationModule */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF6121E1EE0F00A1502C /* OVConfig.h */,
+				A6CCAF6721E1F46300A1502C /* LocationToolBar */,
+				A6CCAF6021E1EB5900A1502C /* LocationPickerView */,
+				A6CCAF5021E1E96C00A1502C /* LocationModel */,
+			);
+			path = LocationModule;
+			sourceTree = "<group>";
+		};
+		A6CCAF5021E1E96C00A1502C /* LocationModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF5A21E1EAC300A1502C /* OVLocationConfig.h */,
+				A6CCAF7321E2218400A1502C /* Json转成的Model */,
+				A6CCAF7221E2216400A1502C /* 作为页面传递参数Model */,
+			);
+			path = LocationModel;
+			sourceTree = "<group>";
+		};
+		A6CCAF6021E1EB5900A1502C /* LocationPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF5D21E1EB5300A1502C /* OVLocationPickerView.h */,
+				A6CCAF5E21E1EB5300A1502C /* OVLocationPickerView.m */,
+			);
+			path = LocationPickerView;
+			sourceTree = "<group>";
+		};
+		A6CCAF6721E1F46300A1502C /* LocationToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF6E21E1F4E700A1502C /* Category */,
+				A6CCAF6821E1F47200A1502C /* ToolBar.h */,
+				A6CCAF6921E1F47200A1502C /* ToolBar.m */,
+			);
+			path = LocationToolBar;
+			sourceTree = "<group>";
+		};
+		A6CCAF6E21E1F4E700A1502C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF6C21E1F4E400A1502C /* UIBarButtonItem+Item.h */,
+				A6CCAF6B21E1F4E400A1502C /* UIBarButtonItem+Item.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A6CCAF7221E2216400A1502C /* 作为页面传递参数Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF6F21E1FB9400A1502C /* OVLocationModel.h */,
+				A6CCAF7021E1FB9400A1502C /* OVLocationModel.m */,
+			);
+			path = "作为页面传递参数Model";
+			sourceTree = "<group>";
+		};
+		A6CCAF7321E2218400A1502C /* Json转成的Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6CCAF5821E1EAA800A1502C /* LocationJson.json */,
+				A6CCAF5121E1E9FC00A1502C /* OVLocationBaseClass.h */,
+				A6CCAF5421E1E9FC00A1502C /* OVLocationBaseClass.m */,
+				A6CCAF5321E1E9FC00A1502C /* OVLocationCity.h */,
+				A6CCAF5521E1E9FC00A1502C /* OVLocationCity.m */,
+			);
+			path = "Json转成的Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6CCAF3221E1E92F00A1502C /* 省市区联动 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6CCAF4921E1E93A00A1502C /* Build configuration list for PBXNativeTarget "省市区联动" */;
+			buildPhases = (
+				CDD4A4DF9CC4599B0CC29C41 /* [CP] Check Pods Manifest.lock */,
+				A6CCAF2F21E1E92F00A1502C /* Sources */,
+				A6CCAF3021E1E92F00A1502C /* Frameworks */,
+				A6CCAF3121E1E92F00A1502C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "省市区联动";
+			productName = "省市区联动";
+			productReference = A6CCAF3321E1E92F00A1502C /* 省市区联动.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6CCAF2B21E1E92F00A1502C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.ovix;
+				TargetAttributes = {
+					A6CCAF3221E1E92F00A1502C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A6CCAF2E21E1E92F00A1502C /* Build configuration list for PBXProject "省市区联动" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6CCAF2A21E1E92F00A1502C;
+			productRefGroup = A6CCAF3421E1E92F00A1502C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6CCAF3221E1E92F00A1502C /* 省市区联动 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6CCAF3121E1E92F00A1502C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CCAF4321E1E93A00A1502C /* LaunchScreen.storyboard in Resources */,
+				A6CCAF4021E1E93A00A1502C /* Assets.xcassets in Resources */,
+				A6CCAF3E21E1E92F00A1502C /* Main.storyboard in Resources */,
+				A6CCAF5921E1EAA800A1502C /* LocationJson.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDD4A4DF9CC4599B0CC29C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-省市区联动-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6CCAF2F21E1E92F00A1502C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6CCAF3B21E1E92F00A1502C /* ViewController.m in Sources */,
+				A6CCAF7121E1FB9400A1502C /* OVLocationModel.m in Sources */,
+				A6CCAF6D21E1F4E400A1502C /* UIBarButtonItem+Item.m in Sources */,
+				A6CCAF4621E1E93A00A1502C /* main.m in Sources */,
+				A6CCAF3821E1E92F00A1502C /* AppDelegate.m in Sources */,
+				A6CCAF6621E1F29D00A1502C /* SecondViewController.m in Sources */,
+				A6CCAF5F21E1EB5300A1502C /* OVLocationPickerView.m in Sources */,
+				A6CCAF5621E1E9FC00A1502C /* OVLocationBaseClass.m in Sources */,
+				A6CCAF5721E1E9FC00A1502C /* OVLocationCity.m in Sources */,
+				A6CCAF6A21E1F47200A1502C /* ToolBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6CCAF3C21E1E92F00A1502C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6CCAF3D21E1E92F00A1502C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6CCAF4121E1E93A00A1502C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6CCAF4221E1E93A00A1502C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6CCAF4721E1E93A00A1502C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6CCAF4821E1E93A00A1502C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6CCAF4A21E1E93A00A1502C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D657B4E8A43724496396492A /* Pods-省市区联动.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248BJ2EZ6N;
+				INFOPLIST_FILE = "省市区联动/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ovix.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6CCAF4B21E1E93A00A1502C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86949DA9E54891A890E2FA62 /* Pods-省市区联动.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 248BJ2EZ6N;
+				INFOPLIST_FILE = "省市区联动/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ovix.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6CCAF2E21E1E92F00A1502C /* Build configuration list for PBXProject "省市区联动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CCAF4721E1E93A00A1502C /* Debug */,
+				A6CCAF4821E1E93A00A1502C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6CCAF4921E1E93A00A1502C /* Build configuration list for PBXNativeTarget "省市区联动" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6CCAF4A21E1E93A00A1502C /* Debug */,
+				A6CCAF4B21E1E93A00A1502C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6CCAF2B21E1E92F00A1502C /* Project object */;
+}

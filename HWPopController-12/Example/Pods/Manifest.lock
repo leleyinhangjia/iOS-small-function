@@ -1,0 +1,23 @@
+PODS:
+  - HWPopController (1.0.5)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - HWPopController (from `../`)
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  HWPopController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HWPopController: 1a3feaa1a09a22ef3296fdee0af621b52c42b7da
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 179b81bd45021112cd2e885cd6ee23d79b4fb578
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,26 @@
+PODS:
+  - FreeStreamer (3.9.3):
+    - Reachability (~> 3.0)
+  - Reachability (3.2)
+  - SDWebImage (5.0.1):
+    - SDWebImage/Core (= 5.0.1)
+  - SDWebImage/Core (5.0.1)
+
+DEPENDENCIES:
+  - FreeStreamer
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FreeStreamer
+    - Reachability
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  FreeStreamer: 8d52b299dc97e557ff156480bf86a666165bd1e5
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: 27dd2c9ea07a2252f94557c9fbb6105ee94b74c9
+
+PODFILE CHECKSUM: e546035463408f43ba42848f52361ef386a1d927
+
+COCOAPODS: 1.6.1

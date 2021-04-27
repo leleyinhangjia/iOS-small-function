@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63B875781CB047AB00AE8E98 /* DLRadioButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B875771CB047AB00AE8E98 /* DLRadioButton.framework */; };
+		63B875791CB0481900AE8E98 /* DLRadioButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63B875771CB047AB00AE8E98 /* DLRadioButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63B8757B1CBAB95800AE8E98 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8757A1CBAB95800AE8E98 /* DemoViewController.swift */; };
+		63C933161B48EB1C009DD715 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C933151B48EB1C009DD715 /* Images.xcassets */; };
+		D1BE3A0319A7D263004BD3F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE3A0219A7D263004BD3F5 /* Foundation.framework */; };
+		D1BE3A0519A7D263004BD3F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE3A0419A7D263004BD3F5 /* CoreGraphics.framework */; };
+		D1BE3A0719A7D263004BD3F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE3A0619A7D263004BD3F5 /* UIKit.framework */; };
+		D1BE3A0D19A7D263004BD3F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D1BE3A0B19A7D263004BD3F5 /* InfoPlist.strings */; };
+		D1BE3A0F19A7D263004BD3F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE3A0E19A7D263004BD3F5 /* main.m */; };
+		D1BE3A1319A7D263004BD3F5 /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE3A1219A7D263004BD3F5 /* DLAppDelegate.m */; };
+		D1BE3A3619AB683D004BD3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BE3A3519AB683D004BD3F5 /* Main.storyboard */; };
+		D1BE3A3919AB7000004BD3F5 /* DLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BE3A3819AB7000004BD3F5 /* DLDemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		634D5B4F1C5D84FE00A3740D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63B875791CB0481900AE8E98 /* DLRadioButton.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63B875771CB047AB00AE8E98 /* DLRadioButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = "<group>"; };
+		63B8757A1CBAB95800AE8E98 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		63C933151B48EB1C009DD715 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1BE39FF19A7D263004BD3F5 /* DLRadioButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLRadioButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BE3A0219A7D263004BD3F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D1BE3A0419A7D263004BD3F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D1BE3A0619A7D263004BD3F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D1BE3A0A19A7D263004BD3F5 /* DLRadioButtonExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DLRadioButtonExample-Info.plist"; sourceTree = "<group>"; };
+		D1BE3A0C19A7D263004BD3F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D1BE3A0E19A7D263004BD3F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1BE3A1019A7D263004BD3F5 /* DLRadioButtonExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DLRadioButtonExample-Prefix.pch"; sourceTree = "<group>"; };
+		D1BE3A1119A7D263004BD3F5 /* DLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
+		D1BE3A1219A7D263004BD3F5 /* DLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
+		D1BE3A3519AB683D004BD3F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D1BE3A3719AB7000004BD3F5 /* DLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLDemoViewController.h; sourceTree = "<group>"; };
+		D1BE3A3819AB7000004BD3F5 /* DLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLDemoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1BE39FC19A7D263004BD3F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1BE3A0519A7D263004BD3F5 /* CoreGraphics.framework in Frameworks */,
+				D1BE3A0719A7D263004BD3F5 /* UIKit.framework in Frameworks */,
+				63B875781CB047AB00AE8E98 /* DLRadioButton.framework in Frameworks */,
+				D1BE3A0319A7D263004BD3F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1BE39F619A7D263004BD3F5 = {
+			isa = PBXGroup;
+			children = (
+				D1BE3A0819A7D263004BD3F5 /* DLRadioButtonExample */,
+				D1BE3A0119A7D263004BD3F5 /* Frameworks */,
+				D1BE3A0019A7D263004BD3F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1BE3A0019A7D263004BD3F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1BE39FF19A7D263004BD3F5 /* DLRadioButtonExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1BE3A0119A7D263004BD3F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B875771CB047AB00AE8E98 /* DLRadioButton.framework */,
+				D1BE3A0219A7D263004BD3F5 /* Foundation.framework */,
+				D1BE3A0419A7D263004BD3F5 /* CoreGraphics.framework */,
+				D1BE3A0619A7D263004BD3F5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1BE3A0819A7D263004BD3F5 /* DLRadioButtonExample */ = {
+			isa = PBXGroup;
+			children = (
+				D1BE3A1119A7D263004BD3F5 /* DLAppDelegate.h */,
+				D1BE3A1219A7D263004BD3F5 /* DLAppDelegate.m */,
+				63C933151B48EB1C009DD715 /* Images.xcassets */,
+				D1BE3A3519AB683D004BD3F5 /* Main.storyboard */,
+				D1BE3A3719AB7000004BD3F5 /* DLDemoViewController.h */,
+				D1BE3A3819AB7000004BD3F5 /* DLDemoViewController.m */,
+				63B8757A1CBAB95800AE8E98 /* DemoViewController.swift */,
+				D1BE3A0919A7D263004BD3F5 /* Supporting Files */,
+			);
+			path = DLRadioButtonExample;
+			sourceTree = "<group>";
+		};
+		D1BE3A0919A7D263004BD3F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1BE3A0A19A7D263004BD3F5 /* DLRadioButtonExample-Info.plist */,
+				D1BE3A0B19A7D263004BD3F5 /* InfoPlist.strings */,
+				D1BE3A0E19A7D263004BD3F5 /* main.m */,
+				D1BE3A1019A7D263004BD3F5 /* DLRadioButtonExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1BE39FE19A7D263004BD3F5 /* DLRadioButtonExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1BE3A2B19A7D264004BD3F5 /* Build configuration list for PBXNativeTarget "DLRadioButtonExample" */;
+			buildPhases = (
+				D1BE39FB19A7D263004BD3F5 /* Sources */,
+				D1BE39FC19A7D263004BD3F5 /* Frameworks */,
+				D1BE39FD19A7D263004BD3F5 /* Resources */,
+				634D5B4F1C5D84FE00A3740D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLRadioButtonExample;
+			productName = DLRadioButtonExample;
+			productReference = D1BE39FF19A7D263004BD3F5 /* DLRadioButtonExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1BE39F719A7D263004BD3F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DL;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Xingruo Liu";
+				TargetAttributes = {
+					D1BE39FE19A7D263004BD3F5 = {
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D1BE39FA19A7D263004BD3F5 /* Build configuration list for PBXProject "DLRadioButtonExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D1BE39F619A7D263004BD3F5;
+			productRefGroup = D1BE3A0019A7D263004BD3F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1BE39FE19A7D263004BD3F5 /* DLRadioButtonExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1BE39FD19A7D263004BD3F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C933161B48EB1C009DD715 /* Images.xcassets in Resources */,
+				D1BE3A0D19A7D263004BD3F5 /* InfoPlist.strings in Resources */,
+				D1BE3A3619AB683D004BD3F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1BE39FB19A7D263004BD3F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1BE3A1319A7D263004BD3F5 /* DLAppDelegate.m in Sources */,
+				D1BE3A3919AB7000004BD3F5 /* DLDemoViewController.m in Sources */,
+				D1BE3A0F19A7D263004BD3F5 /* main.m in Sources */,
+				63B8757B1CBAB95800AE8E98 /* DemoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1BE3A0B19A7D263004BD3F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1BE3A0C19A7D263004BD3F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1BE3A2919A7D264004BD3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1BE3A2A19A7D264004BD3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1BE3A2C19A7D264004BD3F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DLRadioButtonExample/DLRadioButtonExample-Prefix.pch";
+				INFOPLIST_FILE = "DLRadioButtonExample/DLRadioButtonExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuxingruo.$(PRODUCT_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D1BE3A2D19A7D264004BD3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DLRadioButtonExample/DLRadioButtonExample-Prefix.pch";
+				INFOPLIST_FILE = "DLRadioButtonExample/DLRadioButtonExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liuxingruo.$(PRODUCT_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 4.2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1BE39FA19A7D263004BD3F5 /* Build configuration list for PBXProject "DLRadioButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1BE3A2919A7D264004BD3F5 /* Debug */,
+				D1BE3A2A19A7D264004BD3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1BE3A2B19A7D264004BD3F5 /* Build configuration list for PBXNativeTarget "DLRadioButtonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1BE3A2C19A7D264004BD3F5 /* Debug */,
+				D1BE3A2D19A7D264004BD3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1BE39F719A7D263004BD3F5 /* Project object */;
+}

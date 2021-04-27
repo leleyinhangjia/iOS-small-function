@@ -1,0 +1,16 @@
+PODS:
+  - ShotBlocker (0.0.3)
+
+DEPENDENCIES:
+  - ShotBlocker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ShotBlocker
+
+SPEC CHECKSUMS:
+  ShotBlocker: e05c2f5b411733dddafb807250e90e7b9931c73e
+
+PODFILE CHECKSUM: 39ecdca016c36b790610289b80f1faf7b3ef82cb
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,4 @@
+platform:ios,'8.0'
+target '禁止用户截屏' do
+pod 'ShotBlocker'
+end

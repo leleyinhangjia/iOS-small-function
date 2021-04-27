@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1eT-rW-DvV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success-baby" translatesAutoresizingMaskIntoConstraints="NO" id="QwK-rZ-0wc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QwK-rZ-0wc" firstAttribute="leading" secondItem="1eT-rW-DvV" secondAttribute="leading" id="PaT-Gs-4tO"/>
+                <constraint firstItem="QwK-rZ-0wc" firstAttribute="top" secondItem="1eT-rW-DvV" secondAttribute="top" id="h5t-oD-Mwm"/>
+                <constraint firstAttribute="bottom" secondItem="QwK-rZ-0wc" secondAttribute="bottom" id="si8-4z-llN"/>
+                <constraint firstAttribute="trailing" secondItem="QwK-rZ-0wc" secondAttribute="trailing" id="wWf-Cp-s7b"/>
+            </constraints>
+            <size key="customSize" width="320" height="200"/>
+            <point key="canvasLocation" x="141" y="115"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="success-baby" width="640" height="425"/>
+    </resources>
+</document>
