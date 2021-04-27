@@ -1,24 +1,22 @@
 # iOS-small-function
-
 ## 项目中会出现小需求,验证一下功能(Demo并非所有自己手写,项目中涉及到东西,根据DEMO定制了自己项目中):
-
 #### Demo 功能如下:
-#### 1.SSGestureLockView-手势登录
-#### 2.UITableView悬浮
-#### 3.BarrageRenderer-develop-弹幕
-#### 4.省市区联动
-#### 5.禁止用户截屏
-#### 6.CGXPopoverViewDemo-弹出框
-#### 7.CityPicker-城市选择
-#### 8.CSStickyHeaderFlowLayout-master
-#### 9.DatePickerAlertView-时间选择器
-#### 10.Demo_AttributedLable-master
-#### 11.DLRadioButton-master
-#### 12.HWPopController
-#### 13.KVCDemo
-#### 14.NSDate-Extensions-master
-#### 15.ScrollViewDemo
-#### 16.BANetManager-master  视频上传,转码,压缩
+* 1.SSGestureLockView-手势登录
+* 2.UITableView悬浮
+* 3.BarrageRenderer-develop-弹幕
+* 4.省市区联动
+* 5.禁止用户截屏
+* 6.CGXPopoverViewDemo-弹出框
+* 7.CityPicker-城市选择
+* 8.CSStickyHeaderFlowLayout-master
+* 9.DatePickerAlertView-时间选择器
+* 10.Demo_AttributedLable-master
+* 11.DLRadioButton-master
+* 12.HWPopController
+* 13.KVCDemo
+* 14.NSDate-Extensions-master
+* 15.ScrollViewDemo
+* 16.BANetManager-master  视频上传,转码,压缩
 
 ## 高质量技术博客
 
